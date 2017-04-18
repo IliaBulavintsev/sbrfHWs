@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">HW1</string>
+    <string name="battery_percent_format">%1$d%%</string>
+    <string name="battery_technology_format">Technology: %1$s</string>
+    <string name="battery_status_format">Status: %1$s</string>
+
+    <string-array name="battery_status">
+        <item>No battery</item>
+        <item>Unknown</item>
+        <item>Charging</item>
+        <item>Discharging</item>
+        <item>Not charging</item>
+        <item>Full</item>
+    </string-array>
 </resources>

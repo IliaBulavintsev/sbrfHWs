@@ -10,15 +10,36 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.ilia.hw1.MainActivity">
 
-    <View
+    <TextView
+        android:id="@+id/battery_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/battery_image"
+        tools:text="100%"
+        android:textAppearance="@style/percentAppearence"/>
+
+    <TextView
+        android:id="@+id/battery_technology"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/battery_percent"
+        tools:text="Li-on"/>
+
+    <TextView
+        android:id="@+id/battery_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/battery_technology"
+        android:text="status"/>
+
+    <ImageView
+        android:id="@+id/battery_image"
         android:layout_centerInParent="true"
-        android:id="@+id/animated_view"
-        android:layout_width="500dp"
-        android:layout_height="200dp"
-        android:background="@drawable/indicator"
-        android:layout_marginBottom="@dimen/shape_vertical_padding"
-        android:layout_marginTop="@dimen/shape_vertical_padding"
-        android:clickable="true"
-        />
+        android:layout_width="@dimen/battery_width"
+        android:layout_height="@dimen/battery_height"
+        android:src="@drawable/battery"/>
 
 </RelativeLayout>
