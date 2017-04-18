@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/shape_bound" />
+    <item android:drawable="@drawable/clip" android:top="@dimen/shape_stroke_width"
+          android:right="@dimen/shape_stroke_width" android:left="@dimen/shape_stroke_width"
+          android:bottom="@dimen/shape_stroke_width"/>
+    <item android:drawable="@drawable/ic_flash"
+        android:gravity="center"/>
+
+</layer-list>
